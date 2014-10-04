@@ -1,0 +1,181 @@
+nav {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+.navbar {
+    margin-bottom: 0;
+    
+
+}
+body{
+    position: relative;
+}
+#main {
+    background-image: url('../img/ponte.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+    background-position: center center;
+}
+@media screen and (max-width: 390px) {
+        #main{
+            background: url('../img/ponte1.jpg') no-repeat fixed;
+        }
+    
+    
+        img.background-right{
+            
+        }
+    }
+
+#navbar{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+div.footer{
+    height: 50px;
+
+    background-image: url('../img/tweed.png');
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) inset;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-size: 10px;
+    
+    
+}
+@media screen and (max-width: 390px) {
+    div.footer{
+        background-image: url('../img/tweed_@2X.png');
+    }
+    }
+div.info{
+    z-index: -1; 
+    padding: 50px 3em;
+    text-align: center;
+    background-image: url('../img/bedge_grunge.png');
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) inset;
+    
+
+}
+@media screen and (max-width: 390px) {
+    div.info{
+        background-image: url('../img/bedge_grunge_@2X.png');
+    }
+    }
+a.navbar-brand{
+    font-family: Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.map{
+    z-index: -1;
+    display: block;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) ;
+}
+#projetos{
+    display: block; position: relative; top: -50px; visibility: hidden;
+}
+
+div.painel{
+    position: relative;
+    margin: 0 auto;
+    
+    padding: 25px 15px;
+    text-align: justify;
+}
+div.painel h2{
+    text-align: center;
+}
+
+.panel{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) ;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+div.info img{
+    margin-bottom: 2em;
+    max-width: 266px;
+    margin-right: 0; 
+}
+
+div.img-wrapper{
+    z-index: 0;
+    position: relative;
+}
+
+img.background-right{
+    
+    transform:rotate(75deg);
+    -ms-transform:rotate(75deg); /* IE 9 */
+    -webkit-transform:rotate(75deg);
+    position: absolute;
+    width: 300px;
+    top: 0;
+    right: -35px;
+}
+img.background-left{
+    
+    transform:rotate(-15deg);
+    -ms-transform:rotate(-15deg); /* IE 9 */
+    -webkit-transform:rotate(-15deg);
+    position: absolute;
+    width: 300px;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 390px) {
+    img.background-left, img.background-right{
+        width: 200px;
+    }
+    }
+div.item{
+    padding-top: 50px;
+    height: 500px;
+    text-align: center;
+    background-image: url('../img/tweed.png');
+}
+@media screen and (max-width: 390px) {
+    div.item{
+        background-image: url('../img/tweed_@2X.png');
+    }
+    }
+div.item img{
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    border-radius: 15%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) ;
+}
+
+@media screen and (max-width: 390px) {
+    div.item img{
+        width: 250px;
+    }
+    }
+#chevron {
+    cursor: pointer;
+    top: 90%;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+     -webkit-animation-delay: 1s;
+}
+
+ul.nav li a{
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+}

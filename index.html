@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body data-spy="scroll">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        
+
+        <section id="main">
+            <div id="hero" class="container">
+                <span id="chevron" class="glyphicon glyphicon-chevron-down bounce animated"></span>
+            </div>
+            <section id="header">
+            <nav id="navbar" class="navbar navbar-default navbar-static-top start" role="navigation">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#" data-target="#chevron">Jose Isidoro Silva</a>
+                </div>
+                <div class="collapse show-footer navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#sobre" class="fadeIn animated" data-target="#sobre">Sobre</a></li>
+                    <li><a href="#projetos" class="fadeIn animated" data-target="#projetos">Projetos</a></li>
+                    <li><a href="#contato" class="fadeIn animated" data-target="#contato">Contato</a></li>
+                  </ul>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+        </section>
+            <div id="sobre" class="info container-fluid">
+                <div class="img-wrapper">
+                    <img class="background-left" src="img/notepad.png">  
+                </div>
+                <div class="img-wrapper">
+                    <img class="background-right" src="img/pen.png">  
+                </div>
+                
+                <div class="row">
+                    <img src="img/profile.png" class="profile img-circle  col-md-3">
+                    
+                    <div class="painel col-md-9 panel panel-default"><h2>Est jerky ground round</h2><p> Bacon ipsum dolor sit amet shank tenderloin ex salami. Frankfurter laboris eu, turkey swine ball tip brisket cillum esse pork loin magna. Adipisicing jerky veniam excepteur, bacon kevin enim aliqua laboris dolore turducken tail. Landjaeger rump leberkas, magna ex tail fatback aute strip steak veniam pork loin aliqua nulla tempor. Filet mignon strip steak do magna short loin turkey bresaola veniam. Dolor sunt landjaeger, tail ut t-bone nisi consectetur salami short loin.</p></div>
+                </div>
+                
+                
+            </div>
+            <div id="projetos"></div>
+            <div  class="map">
+                <div id="map-canvas" class="container-fluid" style="height: 500px"></div>
+            </div>
+            
+            
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/portfolio-a1.jpg" alt="First slide">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Example headline.</h1>
+                      <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/portfolio-b1.jpg" alt="Second slide">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Another example headline.</h1>
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/portfolio-c1.jpg" alt="Third slide">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>One more for good measure.</h1>
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div><!-- /.carousel -->
+
+            <div id="contato" class="info">
+                <h1>Contato</h1>
+                <p>Pancetta short ribs enim, voluptate dolor id consequat esse filet mignon est.</p>
+                <p>Pancetta short ribs enim, voluptate dolor id consequat esse filet mignon est.</p>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <p>Created by Pedro Bellesa. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/google-maps.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+         
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='http://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

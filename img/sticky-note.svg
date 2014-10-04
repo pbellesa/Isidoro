@@ -1,0 +1,27 @@
+<?xml version="1.0"?><svg width="500" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>sticky note</title>
+ <defs>
+  <linearGradient id="linearGradient3366">
+   <stop stop-color="#fce94f" id="stop3368" offset="0"/>
+   <stop stop-color="#f5f54d" stop-opacity="0.960784" id="stop3370" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient3246">
+   <stop stop-color="#f5f0a4" stop-opacity="0.960784" id="stop3248" offset="0"/>
+   <stop stop-color="#f5da00" stop-opacity="0.960784" id="stop3250" offset="1"/>
+  </linearGradient>
+  <filter id="filter3342">
+   <feGaussianBlur id="feGaussianBlur3344" stdDeviation="9.409953"/>
+  </filter>
+  <linearGradient y2="-0.191176" x2="0.746694" y1="0.860294" x1="0.5" id="linearGradient3372" xlink:href="#linearGradient3366"/>
+ </defs>
+ <metadata id="metadata7">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g id="layer1"/>
+  <g transform="matrix(1.00825 0 0 1.21693 817.792 101.641)" id="g3346">
+   <path fill="#2e3436" fill-rule="evenodd" stroke="#000000" stroke-width="1px" filter="url(#filter3342)" d="m-403.867676,33.67337l52.860168,247.600922l-387.911926,10.367554l1.37207,-245.771366l333.679688,-12.197109z" id="path3256"/>
+   <path fill="#fcaf3e" fill-rule="evenodd" stroke-width="1px" d="m-749.321472,35.203339l362.644775,-15.152283c8.417938,86.075317 17.728729,172.289001 26.146667,256.461426c-98.189545,11.57666 -256.377625,11.593506 -390.811707,18.300049c7.561218,-86.536377 7.789368,-173.072784 2.020264,-259.609192z" id="path3751"/>
+   <path fill="url(#linearGradient3372)" fill-rule="evenodd" stroke-width="1px" d="m-749.949951,33.388702l362.644745,-15.152313c8.417938,86.075348 17.728729,172.289001 26.146698,256.461456c-98.189575,11.57666 -256.377686,11.593506 -390.811707,18.300049c7.561157,-86.536407 7.789307,-173.072815 2.020264,-259.609192z" id="path2474"/>
+  </g>
+ </g>
+</svg>
