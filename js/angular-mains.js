@@ -5,9 +5,9 @@
     
     app.controller('ProjectController', function ($scope) {
         $scope.projetos = [
-            {name: "Ponte sobre Rio Orinoco", description: "Ciudad Guayana, Venezuela", image: "portfolio-c1.jpg", position: "8.276281, -62.899754", target: "ori"},
+            {name: "Ponte Orinoquia", description: "Ciudad Guayana, Venezuela", image: "portfolio-c1.jpg", position: "8.276281, -62.899754", target: "ori"},
             {name: "Sede Petrobrás", description: "Vitória - ES, Brasil", image: "portfolio-b1.jpg", position: "-20.296263, -40.299730", target: "ptb"},
-            {name: "Projeto Águas Limpas", description: "Vitória - ES, Brasil", image: "portfolio-c1.jpg", position: "-20.303268, -40.319875", target: "agl"},
+            {name: "Projeto Águas Limpas", description: "Vitória - ES, Brasil", image: "portfolio-ag.jpg", position: "-20.303268, -40.319875", target: "agl"},
             {name: "Ponte Vasco da Gama", description: "Lisboa, Portugal", image: "portfolio-vg1.jpg", position: "38.758156, -9.037735", target: "vgm"},
             {name: "Terceira Ponte", description: "Vitória - ES, Brasil", image: "portfolio-t1.jpg", position: "-20.325067, -40.283130", target: "tc1"},
             {name: "Metro SP - Linha 5", description: "São Paulo - SP, Brasil", image: "portfolio-metro.jpg", position: "-23.659790, -46.768897", target: "met"},
