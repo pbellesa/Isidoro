@@ -179,3 +179,9 @@ ul.nav li a{
   -webkit-animation-duration: 3s;
   -webkit-animation-delay: 0s;
 }
+
+#sobre p{
+ text-align: center;
+}
+.quote{
+    font-family: 'Dancing Script', cursive;}

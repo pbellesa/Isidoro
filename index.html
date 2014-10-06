@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" ng-app="projetos"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,19 +11,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.css">
         <!-- Optional theme -->
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
+        <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
-        <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
     </head>
     <body data-spy="scroll">
         <!--[if lt IE 7]>
@@ -73,7 +70,12 @@
                 <div class="row">
                     <img src="img/profile.png" class="profile img-circle  col-md-3">
                     
-                    <div class="painel col-md-9 panel panel-default"><h2>Est jerky ground round</h2><p> Bacon ipsum dolor sit amet shank tenderloin ex salami. Frankfurter laboris eu, turkey swine ball tip brisket cillum esse pork loin magna. Adipisicing jerky veniam excepteur, bacon kevin enim aliqua laboris dolore turducken tail. Landjaeger rump leberkas, magna ex tail fatback aute strip steak veniam pork loin aliqua nulla tempor. Filet mignon strip steak do magna short loin turkey bresaola veniam. Dolor sunt landjaeger, tail ut t-bone nisi consectetur salami short loin.</p></div>
+                    <div class="painel col-md-9 panel panel-default">
+                        <h2 class="quote">"O conhecimento como ferramenta do empreendedorismo e compromisso de servir."</h2>
+                        <p> Profissional com mais 25 anos de experiencia em Engenharia Civil e projetos concluidos 
+                        atraves do Brasil e outros paises. </p>
+                        <p><a href="files/curriculo.pdf" download>Curriculum Vitae</a></p>
+                    </div>
                 </div>
                 
                 
@@ -84,65 +86,62 @@
             </div>
             
             
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" ng-controller="ProjectController as project">
               <!-- Indicators -->
               <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li ng-repeat="project in projetos" data-target="#myCarousel" data-slide-to="{{$index}}" ng-class="{active : $first}"></li>
               </ol>
-              <div class="carousel-inner">
-                <div class="item active">
-                  <img src="img/portfolio-a1.jpg" alt="First slide">
-                  <div class="container">
-                    <div class="carousel-caption">
-                      <h1>Example headline.</h1>
-                      <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                    </div>
+                  <div class="carousel-inner">
+                        <div class="item" ng-repeat="project in projetos" ng-class="{active : $first}">
+                          <img src="img/{{project.image}}" alt="First slide">
+                          <div class="container">
+                            <div class="carousel-caption">
+                              <h1>{{project.name}}</h1>
+                                <p>{{project.description}}</p>
+                            </div>
+                          </div>
+                        </div>
                   </div>
-                </div>
-                <div class="item">
-                  <img src="img/portfolio-b1.jpg" alt="Second slide">
-                  <div class="container">
-                    <div class="carousel-caption">
-                      <h1>Another example headline.</h1>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="img/portfolio-c1.jpg" alt="Third slide">
-                  <div class="container">
-                    <div class="carousel-caption">
-                      <h1>One more for good measure.</h1>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+               
               <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
               <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
             </div><!-- /.carousel -->
 
             <div id="contato" class="info">
-                <h1>Contato</h1>
-                <p>Pancetta short ribs enim, voluptate dolor id consequat esse filet mignon est.</p>
-                <p>Pancetta short ribs enim, voluptate dolor id consequat esse filet mignon est.</p>
+                <div class="row">
+                    
+                    <h1>Contato</h1>
+                    <div class="col-md-4">
+                    <h3>Endereço</h3>
+                    <p>Avenida Nossa Senhora da Penha, Nº 595</p>
+                    <p>Sala 1301</p>
+                    <p>Vitoria - ES</p></div>
+                    <div class="col-md-4">
+                    <h3>Telefone</h3><p>+55 (27) 2142-1444</p></div>
+                    <div class="col-md-4">
+                    <h3>Email</h3>
+                    <p>eng.isidoro@gmail.com</p></div>
+                </div>
             </div>
             <div class="footer">
                 <div class="container">
-                    <p>Created by Pedro Bellesa. All rights reserved.</p>
+                    <p>Created by <a href="http://pedrobellesa.me">Pedro Bellesa</a>. All rights reserved.</p>
                 </div>
             </div>
         </section>
+        <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.4/angular.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/google-maps.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-         
+        <script src="js/angular-mains.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -151,5 +150,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+-->
     </body>
 </html>
